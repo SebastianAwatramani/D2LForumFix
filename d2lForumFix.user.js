@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name        Desire2learnForumFix
+// @namespace   frcc.desire2learn.com
+// @include     https://frcc.desire2learn.com/d2l/lms/discussions/messageLists/*
+// @version     1
+// @grant       none
+// ==/UserScript==
+
 
 var rows, excludedClasses; //init
 
