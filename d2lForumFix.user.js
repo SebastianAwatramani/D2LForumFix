@@ -13,7 +13,6 @@ rows = document.getElementsByTagName("TR"); //D2L also uses tables for everythin
 excludedClasses = ["d_gact", "dsearch", "dsearch_header", "d_FG", "d_t"]; //Array to hold classes with TRs we don't want to target
 
 for (var i = 0; i < rows.length; i++) { 
-	var anchor, childHeader, count, rowsGrandParent; //init
 	rowsGrandParent = rows[i].parentNode.parentNode; //Gets the grandparent of each row so we can check if the GP is one of the excluded classes above, because those are not the TRs we're looking for
 	if (rows[i].className == "" ||  rows[i].className == " d_dbold") { //The TRs we're looking for either have no class or their class is d_dbold (if it's an unread message)
 		if (excludedClasses.indexOf(rowsGrandParent.className) > -1) { //Check the array for excluded classes
