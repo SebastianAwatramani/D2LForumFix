@@ -7,7 +7,7 @@
 // ==/UserScript==
 
 
-var rows, excludedClasses; //init
+var anchor, childHeader, count, excludedClasses, rows, rowsGrandParent ; //init
 
 rows = document.getElementsByTagName("TR"); //D2L also uses tables for everything, including layout, which they shouldn't but they do.  Get all table rows
 excludedClasses = ["d_gact", "dsearch", "dsearch_header", "d_FG", "d_t"]; //Array to hold classes with TRs we don't want to target
